@@ -12,6 +12,16 @@
 		9F6C7D1C1F84ADEC00D7E1F5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6C7D091F84A9CD00D7E1F5 /* main.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BF83AE61200C2AB600CDD21E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F6C7CFE1F84A9CD00D7E1F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F6C7D051F84A9CD00D7E1F5;
+			remoteInfo = SimpleCalc;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		9F6C7D041F84A9CD00D7E1F5 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -116,6 +126,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				BF83AE62200C2AB600CDD21E /* PBXTargetDependency */,
 			);
 			name = SimpleCalcTests;
 			productName = SimpleCalcTests;
@@ -134,10 +145,12 @@
 				TargetAttributes = {
 					9F6C7D051F84A9CD00D7E1F5 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					9F6C7D131F84A9E700D7E1F5 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -189,6 +202,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF83AE62200C2AB600CDD21E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F6C7D051F84A9CD00D7E1F5 /* SimpleCalc */;
+			targetProxy = BF83AE61200C2AB600CDD21E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		9F6C7D0B1F84A9CD00D7E1F5 /* Debug */ = {
@@ -245,6 +266,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -294,6 +316,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -301,9 +324,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PKYZS83VA8;
+				DEVELOPMENT_TEAM = 2J6E4MT9GV;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -311,9 +335,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PKYZS83VA8;
+				DEVELOPMENT_TEAM = 2J6E4MT9GV;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -322,12 +347,13 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = PKYZS83VA8;
+				DEVELOPMENT_TEAM = 2J6E4MT9GV;
 				INFOPLIST_FILE = SimpleCalcTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.newardassociates.demo.SimpleCalcTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -336,12 +362,13 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = PKYZS83VA8;
+				DEVELOPMENT_TEAM = 2J6E4MT9GV;
 				INFOPLIST_FILE = SimpleCalcTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.newardassociates.demo.SimpleCalcTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
